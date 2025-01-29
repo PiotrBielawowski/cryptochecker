@@ -1,0 +1,189 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f0f3;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1E1E1E, #333);
+    color: white;
+    padding: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card for each cryptocurrency */
+.card {
+    width: 22%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Titles */
+.card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 12px;
+}
+
+/* Price and change */
+.price {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+}
+
+.percentage {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Percentage colors */
+.green {
+    color: #28a745;
+}
+
+.red {
+    color: #dc3545;
+}
+
+/* TradingView widget styling */
+.tradingview-widget {
+    margin-top: 15px;
+}
+
+/* Add padding and cleaner margins */
+.card p, .card h2 {
+    margin: 0;
+}
+
+/* Order book styles (Commented out since it's unused in the HTML) */
+.order-book-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 85%;
+}
+
+.order-book {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+table {
+    width: 48%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Market Cap container */
+.market-cap-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 85%;
+}
+
+/* Market cap details */
+.market-cap {
+    font-size: 1.1em;
+    color: #888;
+    margin: 10px 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+/* Optional interactive elements (e.g., hover effects on buttons) */
+.card:hover {
+    cursor: pointer;
+}
+
+.card:focus {
+    outline: 2px solid #2e7d32;
+}
+
+/* Minor tweaks */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #0056b3;
+}

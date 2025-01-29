@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Live Prices</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <div class="header">Live Cryptocurrency Prices</div>
+
+    <div class="container">
+        <!-- BTC -->
+        <div class="card">
+            <h2>BTC</h2>
+            <p id="price-btc" class="price">Loading...</p>
+            <p id="change-btc" class="percentage">-</p>
+            <div id="btc-chart" class="tradingview-widget"></div>
+        </div>
+
+        <!-- XRP -->
+        <div class="card">
+            <h2>XRP</h2>
+            <p id="price-xrp" class="price">Loading...</p>
+            <p id="change-xrp" class="percentage">-</p>
+            <div id="xrp-chart" class="tradingview-widget"></div>
+        </div>
+
+        <!-- FLR -->
+        <div class="card">
+            <h2>FLR</h2>
+            <p id="price-flr" class="price">Loading...</p>
+            <p id="change-flr" class="percentage">-</p>
+            <div id="flr-chart" class="tradingview-widget"></div>
+        </div>
+
+        <!-- HLN -->
+        <div class="card">
+            <h2>HLN</h2>
+            <p id="price-hln" class="price">Loading...</p>
+            <p id="change-hln" class="percentage">-</p>
+            <div id="hln-chart" class="tradingview-widget"></div>
+        </div>
+    </div>
+
+</body>
+</html>
